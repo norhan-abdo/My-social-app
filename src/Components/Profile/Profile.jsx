@@ -3,12 +3,11 @@ import { useQuery } from "@tanstack/react-query";
 import { Users, Mail, FileText, Bookmark } from "lucide-react";
 import { authContext } from "../../context/AuthContext";
 import axios from "axios";
-import MyPostCard from "../myPostCard/myPostCard";
+import MyPostCard from "../MyPostCard/MyPostCard";
 
 function formatPostDate(isoDate) {
     const date = new Date(isoDate);
 
-    // خيارات الشكل اللي عايزاه
     return date.toLocaleString("en-US", {
         month: "short",    // Mar
         day: "numeric",    // 2
